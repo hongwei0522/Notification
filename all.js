@@ -1,6 +1,7 @@
 var notifyConfig = {
     body: '\\ ^o^ /', // 設定內容
-    icon: '/images/favicon.ico', // 設定 icon
+    // icon: '/images/favicon.ico', // 設定 icon
+    tag: 'newArrival' // 設定標籤
   };
   
   if (Notification.permission === 'default' || Notification.permission === 'undefined') {
