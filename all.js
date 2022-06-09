@@ -24,9 +24,11 @@ var geolocation = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaS
         console.log(response.location.lat);
         console.log(response.location.lng);
         if(response.location.lat == 25.0114095 && response.location.lng == 121.4618415){
-          alert(response.location);
+          document.getElementById('lat').innerHTML = response.location.lat;
+          document.getElementById('lng').innerHTML = response.location.lng;
         }else{
-          alert(response.location);
+          document.getElementById('lat').innerHTML = response.location.lat;
+          document.getElementById('lng').innerHTML = response.location.lng;
         }
     }
     xhr.send();
