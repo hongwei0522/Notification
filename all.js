@@ -24,9 +24,9 @@ var geolocation = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaS
         console.log(response.location.lat);
         console.log(response.location.lng);
         if(response.location.lat == 25.0114095 && response.location.lng == 121.4618415){
-          alert(response);
+          alert(response.location);
         }else{
-          alert(response);
+          alert(response.location);
         }
     }
     xhr.send();
